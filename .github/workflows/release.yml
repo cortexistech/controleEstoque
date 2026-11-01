@@ -143,7 +143,7 @@ jobs:
         run: npm sbom --sbom-format cyclonedx > artifacts/sbom.cdx.json
 
       - name: Publicar release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: |
             artifacts/SHA256SUMS.txt
